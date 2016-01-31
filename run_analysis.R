@@ -107,4 +107,6 @@ tidy <- subData %>% group_by(Subject,Activity) %>%
 ## names(tidy)
 ##[1] "Subject"     "Activity"    "Measurement" "Mean"   
 
+## Write out the data set!
+write.table(tidy,file="tidy.txt",row.names=FALSE)
 ## Each row now only has a single observation on it. This is tidy!
